@@ -1,0 +1,310 @@
+@media screen {
+@font-face {
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Anton'), url('http://themes.googleusercontent.com/static/fonts/anton/v1/tilmJBBU81h1G7ZsdY3Hmw.woff') format('woff');
+}
+@font-face {
+  font-family: 'Brawler';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Brawler'), url('http://themes.googleusercontent.com/static/fonts/brawler/v1/RuR7cMLAfNlP0yo6tYRcjw.woff') format('woff');
+}
+@font-face {
+  font-family: 'Bevan';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Bevan'), url('http://themes.googleusercontent.com/static/fonts/bevan/v2/kZxOvEFDTL6rhtQAWC2LTw.woff') format('woff');
+}
+}
+
+.drop-shadow {
+    position: relative;
+    float: left;
+    width: 40%;
+    padding: 1em;
+    margin: 2em 10px 4em;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.drop-shadow:before, .drop-shadow:after {
+    content: "";
+    position: absolute;
+    z-index: -2;
+}
+.lifted {
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.lifted:before, .lifted:after {
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    height: 20%;
+    max-width: 300px;
+    -webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+.lifted:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    transform: rotate(3deg);
+}
+
+body { 
+    background: #7ABECC no-repeat;
+    font: 14px/20px Helvetica,Arial,sans-serif;
+    color: #E0E0E0;
+    text-align: center;
+}
+
+.ui-body-c {
+    background: transparent;
+}
+
+#logo {
+    text-align: center;  
+    width: 150px; 
+    margin: -18px auto 0 auto;
+    float: none;
+}
+
+#logo img {
+    width: 150px;   
+    margin-top: 5px;
+}
+
+#header h1 {
+    margin: 15px 0 10px 0;
+    font: 4em "Anton",arial,serif;    
+}
+
+#header h1, #header h2 {
+    text-align: center;
+    color: white;
+    text-shadow: #6AA6B2 2px 2px 0;
+}
+
+#header h2 {
+    font: 1.5em/1.0em 'Brawler',arial,serif;
+    font-weight: normal;
+}
+
+#header h1.sub {
+    font-size: 1.6em;
+    margin: 5px 0;
+}
+
+h3 {
+    font: 2.3em "Anton", arial serif;
+    color: #fff;
+    text-shadow: #6aa6b2 2px 2px 0;
+    margin: 5px 0;
+}
+
+
+p code { font-size:1.2em; font-weight:bold; } 
+
+dt { font-weight: bold; margin: 2em 0 .5em; }
+dt code, dd code { font-size:1.3em; line-height:150%; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+nav { margin: 0; }
+
+/* Modified collapsible section styles */
+.content-secondary .ui-collapsible-contain {
+    padding: 10px 15px;
+}
+.content-secondary .ui-collapsible-heading {
+    margin: 0 0 30px;
+}
+.content-secondary .ui-collapsible-heading-collapsed,
+.content-secondary .ui-collapsible-content {
+    padding:0;
+    margin: 0;
+}
+
+#scheduleWrap {
+    width: 450px;
+    margin: 0 auto;
+}
+
+#schedule {
+    color: #E0E0E0;
+}
+
+#schedule td {
+    padding: 7px 10px 10px 3px;
+    border-bottom: 1px solid #fff;
+    vertical-align: top;
+    font-size: 1.2em;
+}
+#schedule td.header {
+    width: 100px;
+    font-weight: bold;
+}
+#schedule td.track {
+    width: 150px;
+}
+#schedule td .speaker, #schedule td .title {
+    margin: 0 0 4px 0;
+}
+#schedule td .speaker {
+    color: #fff;
+}
+#schedule td .title {
+    font-style: italic;
+}
+
+.listHeader {
+    background: #A1D1DB;
+    color: White;
+    font-weight: bold;    
+}
+
+.speakerContent #title {
+    margin-bottom: 19px;
+}
+
+.speakerContent li h3 {
+    font-family: Helvetica,Arial,sans-serif;
+    color: #2F3E46;
+    text-shadow: none;
+}
+
+/* fix for weird bug where vertical scroll bars show up on small screens */
+.ui-content .ui-listview {
+    margin: 0 -15px;
+}
+
+/* docs site layout */
+
+@media all and (min-width: 650px){
+ 
+    .speakerContent #title {
+        margin-top: -31px;
+        margin-bottom: 19px;
+    }
+    
+    .speakerContent .ui-li-thumb {
+        max-height: 78px;
+    }
+    
+    #logo, #logo img { width: 250px; }
+    
+    #logo {
+        margin: 0 auto;
+    }
+    
+    #logo img { margin-top: 0; }
+    
+    #header h1 { font-size: 5em; }
+    #header h1.sub { font-size: 2em; }
+    #header h2 { font-size: 2em; line-height: 1.3em; }
+    
+    .content-secondary {
+        text-align: left;
+        clear: left;
+        float: left;
+        width: 45%;
+        background: none;
+        border-top: 0;
+    }
+    .content-secondary,
+    .type-interior .content-secondary {
+        margin: 30px 0 20px 2%;
+        padding: 20px 4% 0 0;
+            background: none;
+    }
+    .content-primary {
+        width: 45%;
+        clear: right;
+        float: right;
+        margin-top: 30px;
+        margin-right: 1%;
+        padding-right: 1%;
+    }
+    .content-primary ul:first-child {
+        margin-top: 0;
+    }    
+    .type-interior .content-primary {
+        padding: 1.5em 6% 3em 0;
+        margin: 0;
+    }
+    /* fix up the collapsibles - expanded on desktop */
+    .content-secondary .ui-collapsible-heading {
+        display: none;
+    }
+    .content-secondary .ui-collapsible-contain {
+        margin:0;
+    }
+    .content-secondary .ui-collapsible-content {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    .type-interior  .content-secondary .ui-li-divider {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .type-interior .content-secondary {
+        margin: 0;
+        padding: 0;
+    }
+    
+}
+@media all and (min-width: 750px){
+    .type-home .ui-content,
+    .type-interior .ui-content {
+        background-position: 39%;
+    }
+    .content-secondary {
+        width: 34%;
+    }
+    .content-primary {
+        width: 56%;
+        padding-right: 1%;
+    }   
+    .type-interior .ui-content {
+        background-position: 34%;
+    }
+}
+
+@media all and (min-width: 1200px){
+    .type-home .ui-content{
+        background-position: 38.5%;
+    }
+    .type-interior .ui-content {
+        background-position: 30%;
+    }
+    .content-secondary {
+        width: 30%;
+        padding-right:3%;
+        margin: 30px 0 20px 5%;
+    }
+    .type-interior .content-secondary {
+        margin: 0;
+        padding: 0;
+    }
+    .content-primary {
+        width: 50%;
+        margin-right: 3%;
+        padding-right: 3%;
+    }
+    .type-interior .content-primary {
+        width: 60%;
+    }
+}

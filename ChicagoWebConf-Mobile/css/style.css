@@ -165,9 +165,19 @@ nav { margin: 0; }
     text-shadow: none;
 }
 
+/* reset the color for our pages */
+.bioPage {
+    color: white;  
+    text-shadow: none; 
+}
+
 /* fix for weird bug where vertical scroll bars show up on small screens */
 .ui-content .ui-listview {
     margin: 0 -15px;
+}
+
+.ui-content .ui-listview-inset {
+    margin: 0;
 }
 
 /* docs site layout */

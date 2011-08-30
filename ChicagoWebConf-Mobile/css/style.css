@@ -1,4 +1,11 @@
 
+#logo img { width: 250px }
+#logo {
+    text-align: center;
+}
+
+/* Begin ChicagoWebConf Horked Styles */
+
 .drop-shadow {
     position: relative;
     float: left;
@@ -104,18 +111,6 @@ pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
 
 nav { margin: 0; }
 
-/* Modified collapsible section styles */
-.content-secondary .ui-collapsible-contain {
-    padding: 10px 15px;
-}
-.content-secondary .ui-collapsible-heading {
-    margin: 0 0 30px;
-}
-.content-secondary .ui-collapsible-heading-collapsed,
-.content-secondary .ui-collapsible-content {
-    padding:0;
-    margin: 0;
-}
 
 #scheduleWrap {
     width: 450px;
@@ -165,7 +160,7 @@ nav { margin: 0; }
     text-shadow: none;
 }
 
-/* reset the color for our pages */
+/* reset the color for our bio pages */
 .bioPage {
     color: white;  
     text-shadow: none; 
@@ -180,10 +175,29 @@ nav { margin: 0; }
     margin: 0;
 }
 
+/* End ChicagoWebConf styles */
+
+
+/* Taken from jQuery Mobile Demo site */
+
+.content-secondary .ui-collapsible-contain {
+    padding: 10px 15px;
+}
+.content-secondary .ui-collapsible-heading {
+    margin: 0 0 30px;
+}
+.content-secondary .ui-collapsible-heading-collapsed,
+.content-secondary .ui-collapsible-content {
+    padding:0;
+    margin: 0;
+}
+
 /* docs site layout */
 
 @media all and (min-width: 650px){
- 
+    
+    /* Chicago Web Conf Styles */
+    
     .speakerContent #title {
         margin-top: -31px;
         margin-bottom: 19px;
@@ -204,6 +218,8 @@ nav { margin: 0; }
     #header h1 { font-size: 4.3em; }
     #header h1.sub { font-size: 1.8em; }
     #header h2 { font-size: 1.8em; line-height: 1.2em; }
+    
+    /* End Chicago Web Conf Styles */
     
     .content-secondary {
         text-align: left;
@@ -230,10 +246,6 @@ nav { margin: 0; }
     .content-primary ul:first-child {
         margin-top: 0;
     }    
-    .type-interior .content-primary {
-        padding: 1.5em 6% 3em 0;
-        margin: 0;
-    }
     /* fix up the collapsibles - expanded on desktop */
     .content-secondary .ui-collapsible-heading {
         display: none;
@@ -245,56 +257,25 @@ nav { margin: 0; }
         display: block;
         margin: 0;
         padding: 0;
-    }
-    .type-interior  .content-secondary .ui-li-divider {
-        padding-top: 1em;
-        padding-bottom: 1em;
-    }
-    .type-interior .content-secondary {
-        margin: 0;
-        padding: 0;
-    }
+    }    
     
 }
-@media all and (min-width: 750px){
-    .type-home .ui-content,
-    .type-interior .ui-content {
-        background-position: 39%;
-    }
+@media all and (min-width: 750px){    
     .content-secondary {
         width: 34%;
     }
     .content-primary {
         width: 56%;
         padding-right: 1%;
-    }   
-    .type-interior .ui-content {
-        background-position: 34%;
-    }
+    }       
 }
 
 @media all and (min-width: 1200px){
-    .type-home .ui-content{
-        background-position: 38.5%;
-    }
-    .type-interior .ui-content {
-        background-position: 30%;
-    }
-    .content-secondary {
-        width: 30%;
-        padding-right:3%;
-        margin: 30px 0 20px 5%;
-    }
-    .type-interior .content-secondary {
-        margin: 0;
-        padding: 0;
-    }
+    
     .content-primary {
         width: 50%;
         margin-right: 3%;
         padding-right: 3%;
     }
-    .type-interior .content-primary {
-        width: 60%;
-    }
+    
 }

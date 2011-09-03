@@ -98,8 +98,6 @@
     <Content Include="Lib\SquishIt\SquishIt.Framework.dll" />
     <Content Include="Lib\SquishIt\SquishIt.Mvc.dll" />
     <Content Include="Lib\SquishIt\Yahoo.Yui.Compressor.dll" />
-    <Content Include="License.txt" />
-    <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -173,7 +171,4 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
-  <ItemGroup>
-    <Content Include="Welcome.txt" />
-  </ItemGroup>
 </Project>
